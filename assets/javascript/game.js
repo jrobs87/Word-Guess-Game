@@ -90,14 +90,14 @@ checkGuess = function () {
     };
 
     if (winCheck) {
-        window.confirm("We blew up the Deathstar!  The Rebllion triumphs!"); // good guys win!
+        window.confirm("You won!  Your word was " + word + ". You blew up the Deathstar!  The Rebllion triumphs!"); // good guys win!
         if (confirm) {
             window.location.reload(); // resets the game
         };
     };
 
     if (wrongGuess === 6) { //once you got six wrong letters the game ends
-        window.confirm("The Yavin 4 base has been destroyed.  The Rebellion has been defeated.");
+        window.confirm("You failed failed me for the last time!  You word was " + word +". The Yavin 4 base has been destroyed.  The Rebellion has been defeated.");
         if (confirm) {
             window.location.reload(); // resets the game
         };
